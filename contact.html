@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Yazzy through a mailto form.">
+    <meta name="keywords" content="Yazzy, contact, email, form, mailto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Yazzy</title>
+</head>
+
+<body style="background-image: url('background.png'); background-size: cover; background-repeat: no-repeat;">
+    <!-- Page: Contact (contact.html) -->
+    <center>
+        <h1>Contact</h1>
+
+        <!-- Navigation links -->
+        <table>
+            <td><a href="about.html">About</a></td>
+            <td><a href="music.html">Music</a></td>
+            <td><a href="audio.html">Audio Programming</a></td>
+            <td><a href="index.html">🏠</a></td>
+        </table>
+        <hr/ color="blue">
+
+        <!-- Contact form (mailto) -->
+        <table style="margin-top: 10%;">
+            <tr>
+                <td><h3>Wanna give me money to play music? Wanna talk to me about something cool? Go ahead and fill out that form!</h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <form action="mailto:yazzysmusic@gmail.com" method="POST" enctype="text/plain" style="display: flex; flex-direction: column; gap: 10px; width: 300px; margin: auto;">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
